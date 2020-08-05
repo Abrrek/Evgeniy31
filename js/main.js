@@ -80,7 +80,7 @@ $(document).ready(function () {
   });
 	$(".phone").mask("+7(999) 999-99-99");
 	
-	$(".newsletter-parallax").parallax({ imageSrc: "./img/newsletter-bg.jpg" });
+	// $(".newsletter-parallax").parallax({ imageSrc: "./img/newsletter-bg.jpg" });
 	AOS.init();
 	AOS.init({
 		disable: function () {
