@@ -1632,6 +1632,18 @@ template {
   cursor: pointer;
 }
 
+#name-error, #phone-error {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.footer__input-group {
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 5px;
+}
+
 .modal__overlay {
   position: fixed;
   left: 0;
