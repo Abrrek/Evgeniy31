@@ -9,7 +9,8 @@ body
 .container
   max-width: 1110px
   margin: auto
-
+  &-header
+    position: relative
 img
   max-width: 100% 
 
@@ -37,3 +38,12 @@ img
   color: $primary
   border-bottom: 1px solid $primary
 
+img 
+  opacity: 1
+  transition: opacity 0.3s
+ 
+img[data-src] 
+  opacity: 0
+
+p 
+  margin: 0

@@ -9,6 +9,7 @@
     /> -->
     <!-- с сайта яндекс API про подключение -->
     <title>Best Tour Plan</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Muli:wght@400;600;800&family=Nunito:wght@400;600;700;800&display=swap"
@@ -20,11 +21,11 @@
   </head>
   <body>
     <header class="navbar navbar_mobile_fixed">
-      <div class="container">
+      <div class="container container-header">
         <div class="navbar-top">
           <a href="index.html" class="logo">
             <img
-              data-src="img/horizontal-logo.svg"
+              src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
               class="logo__image"
             />
@@ -40,13 +41,13 @@
               placeholder="Search Location"
             />
             <button class="search__button button">
-              <img data-src="img/search.svg" alt="Icon: search" />
+              <img src="img/search.svg" alt="Icon: search" />
             </button>
           </form>
 
           <a href="#" class="user navbar__user navbar__user_mobile_hidden">
             <img
-              data-src="img/user-avater.jpeg"
+              src="img/user-avater.jpeg"
               alt="Avatar: Nathan"
               class="user__avatar"
             />
@@ -70,7 +71,7 @@
             <li class="navbar-menu__item navbar-menu__item_mobile_visible">
               <a href="#" class="user navbar__user navbar__user_mobile_visible">
                 <img
-                  data-src="img/user-avater.jpeg"
+                  src="img/user-avater.jpeg"
                   alt="Avatar: Nathan"
                   class="user__avatar"
                 />
@@ -88,7 +89,7 @@
                   placeholder="Search Location"
                 />
                 <button class="search__button button">
-                  <img data-src="img/search.svg" alt="Icon: search" />
+                  <img src="img/search.svg" alt="Icon: search" />
                 </button>
               </form>
             </li>
@@ -184,11 +185,11 @@
           <div class="hotel-info__text">
             <div class="hotel-wrapper">
               <div class="stars">
-                <img data-src="img/star.svg" alt="Star" />
-                <img data-src="img/star.svg" alt="Star" />
-                <img data-src="img/star.svg" alt="Star" />
-                <img data-src="img/star.svg" alt="Star" />
-                <img data-src="img/star.svg" alt="Star" />
+                <img src="img/star.svg" alt="Star" />
+                <img src="img/star.svg" alt="Star" />
+                <img src="img/star.svg" alt="Star" />
+                <img src="img/star.svg" alt="Star" />
+                <img src="img/star.svg" alt="Star" />
               </div>
               <h1 class="hotel-name hotel-info__name">GRAND HILTON HOTEL</h1>
               <span class="offer hotel-info__offer">Flash Offer</span>
@@ -216,21 +217,21 @@
               <div class="swiper-slide hotel-slider__item">
                 <img
                   class="hotel-slider__image"
-                  data-src="img/slide.jpg"
+                  src="img/slide.jpg"
                   alt="slide"
                 />
               </div>
               <div class="swiper-slide hotel-slider__item">
                 <img
                   class="hotel-slider__image"
-                  data-src="img/slide.jpg"
+                  src="img/slide.jpg"
                   alt="slide"
                 />
               </div>
               <div class="swiper-slide hotel-slider__item">
                 <img
                   class="hotel-slider__image"
-                  data-src="img/slide.jpg"
+                  src="img/slide.jpg"
                   alt="slide"
                 />
               </div>
@@ -257,7 +258,7 @@
                 <div class="booking__room">
                   <div class="booking__text">
                     <img
-                      data-src="img/user.svg"
+                      src="img/user.svg"
                       alt="Icon: user"
                       class="booking__icon"
                     />
@@ -266,7 +267,7 @@
                   <!-- /.booking__text -->
                   <div class="booking__text">
                     <img
-                      data-src="img/home.svg"
+                      src="img/home.svg"
                       alt="Icon: room"
                       class="booking__icon"
                     />
@@ -280,7 +281,7 @@
               <div class="booking__call-center">
                 <span class="booking__heading">Quick Booking</span>
                 <a href="tel:12100" class="booking__number">
-                  <img data-src="img/phone-call.svg" alt="Icon: phone" />
+                  <img src="img/phone-call.svg" alt="Icon: phone" />
                   <span class="booking__num">12100</span>
                 </a>
               </div>
@@ -294,12 +295,15 @@
               </button>
             </div>
             <!-- /.booking -->
-            <!-- <div class="map-api"> -->
-            <div class="ymap-container">
-              <div class="loader loader-default"></div>
-              <div id="map-yandex" style="height: 213px;"></div>
-            </div>
-            <!-- .ymap-container -->
+            <iframe
+              class="ymap-container"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15810.165995306128!2d98.29922!3d7.838252000000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa67a542329d011e1!2z0J_RhdGD0LrQtdGCLCDQmtCw0YDQvtC9LCDQntGC0LXQu9GMINCl0LjQu9GC0L7QvQ!5e0!3m2!1sru!2sru!4v1596736326031!5m2!1sru!2sru"
+              frameborder="0"
+              style="border: 0;"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            ></iframe>
 
             <!-- /.map -->
           </div>
@@ -325,18 +329,18 @@
             <div class="active-picture">
               <img
                 class="active-picture__image"
-                data-src="img/Hotel-Blue-Haven.jpg"
+                src="img/Hotel-Blue-Haven.jpg"
                 alt="Image: Hotel Blue Haven"
               />
               <span class="active-picture__offer">Flash Offer</span>
             </div>
             <div class="active-info">
               <div class="active-info__rating">
-                <img data-src="img/star.svg" alt="Star" />
-                <img data-src="img/star.svg" alt="Star" />
-                <img data-src="img/star.svg" alt="Star" />
-                <img data-src="img/star.svg" alt="Star" />
-                <img data-src="img/star.svg" alt="Star" />
+                <img src="img/star.svg" alt="Star" />
+                <img src="img/star.svg" alt="Star" />
+                <img src="img/star.svg" alt="Star" />
+                <img src="img/star.svg" alt="Star" />
+                <img src="img/star.svg" alt="Star" />
               </div>
               <h3 class="active-info__title">Hotel Blue Haven</h3>
               <p class="active-info__text">
@@ -348,7 +352,7 @@
               </p>
               <div class="active-info__item">
                 <img
-                  data-src="img/geo.svg"
+                  src="img/geo.svg"
                   alt="Icon: geo"
                   class="active-info__item-icon"
                 />
@@ -360,7 +364,7 @@
 
               <div class="active-info__item">
                 <img
-                  data-src="img/user.svg"
+                  src="img/user.svg"
                   alt="Icon: user"
                   class="active-info__item-icon"
                 />
@@ -370,7 +374,7 @@
 
               <div class="active-info__item">
                 <img
-                  data-src="img/home.svg"
+                  src="img/home.svg"
                   alt="Icon: home"
                   class="active-info__item-icon"
                 />
@@ -399,7 +403,7 @@
             <div class="inactive-picture">
               <img
                 class="inactive-picture__image"
-                data-src="img/Hotel-Blue-Haven.jpg"
+                src="img/Hotel-Blue-Haven.jpg"
                 alt="Image: Hotel Blue Haven"
               />
               <span class="inactive-picture__offer">Flash Offer</span>
@@ -409,7 +413,7 @@
 
               <div class="inactive-info__item">
                 <img
-                  data-src="img/geo.svg"
+                  src="img/geo.svg"
                   alt="Icon: geo"
                   class="inactive-info__item-icon"
                 />
@@ -421,7 +425,7 @@
 
               <div class="inactive-info__item">
                 <img
-                  data-src="img/user.svg"
+                  src="img/user.svg"
                   alt="Icon: user"
                   class="inactive-info__item-icon"
                 />
@@ -431,7 +435,7 @@
 
               <div class="inactive-info__item">
                 <img
-                  data-src="img/home.svg"
+                  src="img/home.svg"
                   alt="Icon: home"
                   class="inactive-info__item-icon"
                 />
@@ -460,7 +464,7 @@
             <div class="inactive-picture">
               <img
                 class="inactive-picture__image"
-                data-src="img/White-Palace.jpg"
+                src="img/White-Palace.jpg"
                 alt="Image: Hotel Blue Haven"
               />
               <span class="inactive-picture__offer">Flash Offer</span>
@@ -470,7 +474,7 @@
 
               <div class="inactive-info__item">
                 <img
-                  data-src="img/geo.svg"
+                  src="img/geo.svg"
                   alt="Icon: geo"
                   class="inactive-info__item-icon"
                 />
@@ -482,7 +486,7 @@
 
               <div class="inactive-info__item">
                 <img
-                  data-src="img/user.svg"
+                  src="img/user.svg"
                   alt="Icon: user"
                   class="inactive-info__item-icon"
                 />
@@ -492,7 +496,7 @@
 
               <div class="inactive-info__item">
                 <img
-                  data-src="img/home.svg"
+                  src="img/home.svg"
                   alt="Icon: home"
                   class="inactive-info__item-icon"
                 />
@@ -521,7 +525,7 @@
             <div class="inactive-picture">
               <img
                 class="inactive-picture__image"
-                data-src="img/Luxury-Place.jpg"
+                src="img/Luxury-Place.jpg"
                 alt="Image: Hotel Blue Haven"
               />
               <span class="inactive-picture__offer">Flash Offer</span>
@@ -531,7 +535,7 @@
 
               <div class="inactive-info__item">
                 <img
-                  data-src="img/geo.svg"
+                  src="img/geo.svg"
                   alt="Icon: geo"
                   class="inactive-info__item-icon"
                 />
@@ -543,7 +547,7 @@
 
               <div class="inactive-info__item">
                 <img
-                  data-src="img/user.svg"
+                  src="img/user.svg"
                   alt="Icon: user"
                   class="inactive-info__item-icon"
                 />
@@ -553,7 +557,7 @@
 
               <div class="inactive-info__item">
                 <img
-                  data-src="img/home.svg"
+                  src="img/home.svg"
                   alt="Icon: home"
                   class="inactive-info__item-icon"
                 />
@@ -582,7 +586,7 @@
             <div class="inactive-picture">
               <img
                 class="inactive-picture__image"
-                data-src="img/Hotel-Five-Star.jpg"
+                src="img/Hotel-Five-Star.jpg"
                 alt="Image: Hotel Blue Haven"
               />
               <span class="inactive-picture__offer">Flash Offer</span>
@@ -592,7 +596,7 @@
 
               <div class="inactive-info__item">
                 <img
-                  data-src="img/geo.svg"
+                  src="img/geo.svg"
                   alt="Icon: geo"
                   class="inactive-info__item-icon"
                 />
@@ -604,7 +608,7 @@
 
               <div class="inactive-info__item">
                 <img
-                  data-src="img/user.svg"
+                  src="img/user.svg"
                   alt="Icon: user"
                   class="inactive-info__item-icon"
                 />
@@ -614,7 +618,7 @@
 
               <div class="inactive-info__item">
                 <img
-                  data-src="img/home.svg"
+                  src="img/home.svg"
                   alt="Icon: home"
                   class="inactive-info__item-icon"
                 />
@@ -689,7 +693,7 @@
               <div class="reviews-slider__item">
                 <div class="reviews-slider__profile">
                   <img
-                    data-src="img/revievs-avatar.jpg"
+                    src="img/revievs-avatar.jpg"
                     alt="Photo: Megan Fox"
                     class="reviews-slider__avatar"
                   />
@@ -697,11 +701,11 @@
                   <h3 class="reviews-slider__username">Megan Fox</h3>
                   <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
                   <div class="reviews-slider__rating">
-                    <img data-src="img/star.svg" alt="Star" />
-                    <img data-src="img/star.svg" alt="Star" />
-                    <img data-src="img/star.svg" alt="Star" />
-                    <img data-src="img/star.svg" alt="Star" />
-                    <img data-src="img/star.svg" alt="Star" />
+                    <img src="img/star.svg" alt="Star" />
+                    <img src="img/star.svg" alt="Star" />
+                    <img src="img/star.svg" alt="Star" />
+                    <img src="img/star.svg" alt="Star" />
+                    <img src="img/star.svg" alt="Star" />
                   </div>
                   <!-- /.reviews-slider__rating -->
                 </div>
@@ -726,18 +730,18 @@
               <div class="reviews-slider__item">
                 <div class="reviews-slider__profile">
                   <img
-                    data-src="img/revievs-avatar-2.jpg"
+                    src="img/revievs-avatar-2.jpg"
                     alt="Photo: Mary Fler"
                     class="reviews-slider__avatar"
                   />
                   <h3 class="reviews-slider__username">Mary Fler</h3>
                   <span class="reviews-slider__date">Stayed 7 June, 2020</span>
                   <div class="reviews-slider__rating">
-                    <img data-src="img/star.svg" alt="Star" />
-                    <img data-src="img/star.svg" alt="Star" />
-                    <img data-src="img/star.svg" alt="Star" />
-                    <img data-src="img/star.svg" alt="Star" />
-                    <img data-src="img/star.svg" alt="Star" />
+                    <img src="img/star.svg" alt="Star" />
+                    <img src="img/star.svg" alt="Star" />
+                    <img src="img/star.svg" alt="Star" />
+                    <img src="img/star.svg" alt="Star" />
+                    <img src="img/star.svg" alt="Star" />
                   </div>
                   <!-- /.reviews-slider__rating -->
                 </div>
@@ -783,7 +787,7 @@
             data-aos-delay="100"
           >
             <img
-              data-src="img/image-ativity-1.jpg"
+              src="img/image-ativity-1.jpg"
               alt="image-ativity-1"
               class="card__image"
             />
@@ -803,7 +807,7 @@
             data-aos-delay="300"
           >
             <img
-              data-src="img/image-ativity-2.jpg"
+              src="img/image-ativity-2.jpg"
               alt="image-ativity-2"
               class="card__image"
             />
@@ -823,7 +827,7 @@
             data-aos-delay="500"
           >
             <img
-              data-src="img/image-ativity-3.jpg"
+              src="img/image-ativity-3.jpg"
               alt="image-ativity-3"
               class="card__image"
             />
@@ -846,7 +850,7 @@
             data-aos-delay="700"
           >
             <img
-              data-src="img/image-ativity-4.jpg"
+              src="img/image-ativity-4.jpg"
               alt="image-ativity-4"
               class="card__image"
             />
@@ -869,7 +873,7 @@
       <div class="container">
         <div class="footer-wrapper">
           <img
-            data-src="img/vertical-logo.svg"
+            src="img/vertical-logo.svg"
             alt="Logo: Best Tour Plan"
             class="logo footer__logo"
             data-aos="fade-right"
@@ -949,13 +953,13 @@
             </h3>
             <div class="footer__social-links">
               <a href="#" class="footer__link"
-                ><img data-src="img/facebook.svg" alt="Icon: facebook"
+                ><img src="img/facebook.svg" alt="Icon: facebook"
               /></a>
               <a href="#" class="footer__link"
-                ><img data-src="img/youtube.svg" alt="Icon: youtube"
+                ><img src="img/youtube.svg" alt="Icon: youtube"
               /></a>
               <a href="#" class="footer__link"
-                ><img data-src="img/instagram.svg" alt="Icon: instagram"
+                ><img src="img/instagram.svg" alt="Icon: instagram"
               /></a>
             </div>
             <!-- /.footer__social-links -->
@@ -998,7 +1002,7 @@
               <li class="footer__item footer__item-contact">
                 <img
                   class="footer__icon"
-                  data-src="img/location.svg"
+                  src="img/location.svg"
                   alt="Icon: location"
                 />9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
                 States
@@ -1006,7 +1010,7 @@
               <li class="footer__item footer__item-contact">
                 <img
                   class="footer__icon"
-                  data-src="img/contact-phone-call.svg"
+                  src="img/contact-phone-call.svg"
                   alt="Icon: contact-phone-call"
                 />
                 <span
@@ -1027,7 +1031,7 @@
               <li class="footer__item footer__item-contact">
                 <img
                   class="footer__icon"
-                  data-src="img/email.svg"
+                  src="img/email.svg"
                   alt="Icon: email"
                 /><span
                   ><a
@@ -1091,7 +1095,7 @@
               >
             </div>
             <img
-              data-src="img/payment.jpg"
+              src="img/payment.jpg"
               alt="Image: payments"
               class="footer-bottom__image"
             />
@@ -1107,7 +1111,7 @@
       <!-- /.modal__overlay -->
       <div class="modal__dialog">
         <a href="#" class="modal__close"
-          ><img data-src="img/close.svg" alt="Icon: close"
+          ><img src="img/close.svg" alt="Icon: close"
         /></a>
         <h3 class="modal__title modal__title-">Booking</h3>
         <form action="send.php" method="POST" class="modal__form form">
@@ -1148,16 +1152,15 @@
       <!-- /.modal__dialog -->
     </div>
     <!-- /.modal -->
-		
-		<script defer src="js/yamap.js"></script>
-		<script src="js/jquery-3.5.1.min.js"></script>
+
+    <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш&nbsp;API-ключ&lang=ru_RU"></script> -->
+    <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyloadxt/1.1.0/jquery.lazyloadxt.min.js"></script>
-    <!-- <script src="js/parallax.min.js"></script> -->
-    <script defer src="js/jquery.validate.min.js"></script>
-    <script defer src="js/jquery.mask.min.js"></script>
-    <script defer src="js/aos.js"></script>
-		<script src="js/main.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
+    <!-- <script src="js/lazyload.min.js"></script> -->
+    <script src="js/main.js"></script>
   </body>
 </html>
-
